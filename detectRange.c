@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void detectRange (int* samples, int count)
+void detectRange (int *samples, int count)
 {
 	int lengthOfRange = 1;
 	int loop = 0;
@@ -21,7 +21,7 @@ void detectRange (int* samples, int count)
 	}
 }
 
-void sortSamples (int* samples, int count)
+void sortSamples (int *samples, int count)
 {
 	int i, j, temp;
 
@@ -39,12 +39,12 @@ void sortSamples (int* samples, int count)
 	}
 }
 
-void main()
+int main()
 {
-	int currMeasurements[7] = {1, 1, 7, 5, 9, 3, 6, 10};
+	int currMeasurements[8] = {1, 1, 7, 5, 9, 3, 6, 10};
 	int numberOfSamples = sizeof(currMeasurements)/sizeof(currMeasurements[0]);
-	sortSamples(*currMeasurements, numberOfSamples);
-	detectRange(*currMeasurements, numberOfSamples);
+	sortSamples(currMeasurements, numberOfSamples);
+	detectRange(currMeasurements, numberOfSamples);
 	return 0;
 }
 
