@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void detectRange (int* samples, int count)
 {
 	int lengthOfRange = 1;
