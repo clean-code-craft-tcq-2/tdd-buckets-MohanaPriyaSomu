@@ -14,7 +14,7 @@ void detectRange (int *samples, int count)
 		}
 		else
 		{
-			printf("Range = %d - %d, Number of samples in range = %d", &firstVal, &samples[loop-1], lengthOfRange);
+			printf("Range = %d - %d, Number of samples in range = %d", firstVal, samples[loop-1], lengthOfRange);
 			firstVal = *(samples+loop);
 			lengthOfRange = 1;
 		}
